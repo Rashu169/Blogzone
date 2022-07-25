@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block main %}
+<!-- Masthead-->
+<header class="masthead register">
+    <h2 class="text-center"> Create New Blog</h2>
+    <div class="container d-flex flex-column">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="{{ url_for('create') }}" method="post" enctype="multipart/form-data">
+                    <div class="msg">
+                        {% autoescape false %}
+                        {{ msg }} <br><br>
+                        {% endautoescape %}
+                    </div>
+                    <label>Title</label>
+                    <input id="title" name="title" type="text" class="form-control mb-3"/>
+                    <label>Description</label>
+                    <input id="description" name="description" type="text" class="form-control mb-3"/>
+                    <label for="img">Select image:</label>
+                    <input type="file" id="img" name="img" accept="image/*">
+                    <br><br>
+                    <button class="btn btn-lg btn-success" type='submit'>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}

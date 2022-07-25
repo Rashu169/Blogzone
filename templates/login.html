@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block main %}
+    <!-- Masthead-->
+    <header class="masthead login">
+            <h2 class="text-center"> Login</h2>
+
+        <div class="container d-flex flex-column">
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="{{ url_for('login') }}" method="post">
+                        <div class="msg">{{ msg }}</div>
+                        <label>Email</label>
+                        <input id="email" name="email" type="text" class="form-control mb-3"/>
+                        <label>Password</label>
+                        <input id="password" name="password" type="Password" class="form-control mb-3"/>
+                        <button class="btn btn-lg btn-success" type='submit'>Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}

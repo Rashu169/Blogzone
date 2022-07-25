@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block main %}
+<!-- Masthead-->
+<header class="masthead register">
+        <h2 class="text-center"> Register New User</h2>
+    <div class="container d-flex flex-column">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="{{ url_for('register') }}" method="post">
+                    <div class="msg">
+                        {% autoescape false %}
+                        {{ msg }} <br><br>
+                        {% endautoescape %}
+                    </div>
+                    <label>Username</label>
+                    <input id="username" name="username" type="text" class="form-control mb-3"/>
+                    <label>Email</label>
+                    <input id="email" name="email" type="text" class="form-control mb-3"/>
+                    <label>Password</label>
+                    <input id="password" name="password" type="Password" class="form-control mb-3"/>
+                    <button class="btn btn-lg btn-outline-success" type='submit'>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}

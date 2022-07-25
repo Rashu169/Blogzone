@@ -1,0 +1,52 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size: cover;
+}
+.card-deck .card {
+    max-width: calc(25% - 30px);
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.card-text {
+    height: 160px;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.card-text p {
+    width: 520px;
+    word-break: break-word;
+}
+
+.update_form {
+    padding: 0;
+    background: white;
+    border: 0;
+    box-shadow: 0 0;
+}
+
+.register {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+}
